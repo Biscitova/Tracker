@@ -1,0 +1,216 @@
+
+@font-face {
+    font-family: TitilliumWeb;
+    font-weight: 200;
+    font-style: normal;
+    src: url('font/TitilliumWeb-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: fontello;
+  src: url('font/fontello/fontello.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+form {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#Form_TaskName {
+    border: 1px solid #a0a0a0;
+    border-radius: 4px 0px 0px 4px;
+    font-size: medium;
+    font-family: TitilliumWeb, sans-serif;
+    font-weight: 200;
+    height: 38px;
+    margin: -3px;
+    padding: 0px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+#AddTaskButton {
+    border: 1px solid #a0a0a0;
+    font-size: medium;
+    font-family: fontello, sans-serif;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    margin: -3px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+#TrackTimeButton {
+    border: 1px solid #a0a0a0;
+    border-radius: 0px 4px 4px 0px;
+    font-size: medium;
+    font-family: fontello, sans-serif;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    margin: -3px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+#AddTaskButton:before {
+    content: '\e801';
+    font-size: large;
+    color: #505050;
+}
+
+#TrackTimeButton:before {
+    content: '\e800';
+    font-size: x-large;
+    color: #505050;
+}
+
+#AddTaskButton:hover:before {
+    content: '\e801';
+    font-size: large;
+    color: black;
+}
+
+#TrackTimeButton:hover:before {
+    content: '\e800';
+    font-size: x-large;
+    color: black;
+}
+
+button {
+    background: -webkit-linear-gradient(-90deg, white, #e4e4e4);
+    background: linear-gradient(180deg, white, #e4e4e4);
+}
+
+button:active {
+    background: -webkit-linear-gradient(90deg, white, #e4e4e4);
+    background: linear-gradient(0deg, white, #e4e4e4);
+}
+
+button img {
+    opacity: .8;
+}
+
+button:hover img {
+    opacity: 1;
+}
+
+#Plus {
+    height: 30px;
+    margin-top: 4px;
+}
+
+#Clock {
+    height: 35px;
+    margin-top: 2px;
+}
+
+ #TaskList {
+   display: -webkit-box;   
+   display: -ms-flexbox;   
+   display: -webkit-flex;  
+   display: flex;          
+
+   -webkit-box-orient: vertical;
+   -ms-flex-direction: column;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+
+   -webkit-box-pack: center;
+   -ms-flex-pack: center; 
+   -webkit-justify-content: center;
+   justify-content: center;
+} 
+
+.main_task_div {
+    cursor: pointer;
+    position: relative;
+}
+
+.close_task_div_inactive {
+    background: #a0a0a0;
+    border-radius: 4px;
+    color: #e4e4e4;
+    width: 15px;
+    height: 13px;
+    line-height: 13px;
+    font-family: TitilliumWeb, sans-serif;
+    font-size: small;
+    text-align: center;
+    padding: 0px 0px 2px 0px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.close_task_div_active {
+    background: #c87018;
+    border-radius: 4px;
+    color: #fca44c;
+    width: 15px;
+    height: 13px;
+    line-height: 13px;
+    font-family: TitilliumWeb, sans-serif;
+    font-size: small;
+    text-align: center;
+    padding: 0px 0px 2px 0px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+#top_drop
+{
+    padding-top: 10px;
+    width: 250px;
+}
+
+.drop_target {
+    height: 5px;
+    transition: all 100ms ease;
+}
+
+.active_drop_target {
+    height: 30px;
+    transition: all 100ms ease;
+}
+
+.task_div { 
+    border-radius: 4px;
+    font-family: TitilliumWeb, sans-serif;
+    font-size: xx-large;
+    line-height: 1.1;
+    padding: 12px;
+    text-align: center;
+}
+
+.task_current {
+    width: auto;
+    background: #fca44c;
+}
+
+.task_current_mouseover {
+    width: auto;
+    background: #fca44c;
+}
+
+.task_mouseover {
+    width: auto;
+    background: #e4e4e4;
+}
+
+.task_inactive {
+    width: auto;
+    background: #e4e4e4;
+}
+.table {
+    border-collapse: collapse;
+  }
